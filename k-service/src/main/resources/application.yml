@@ -1,0 +1,13 @@
+app:
+  greeting: Hello, World!
+
+spring:
+  application:
+    name: cna-service
+
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cna-ui
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
