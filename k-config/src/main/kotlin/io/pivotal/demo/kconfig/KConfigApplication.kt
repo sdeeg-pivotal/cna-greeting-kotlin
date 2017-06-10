@@ -6,7 +6,7 @@ import org.springframework.cloud.config.server.EnableConfigServer
 
 @SpringBootApplication
 @EnableConfigServer
-class KConfigApplication
+open class KConfigApplication
 
 fun main(args: Array<String>) {
     SpringApplication.run(KConfigApplication::class.java, *args)
