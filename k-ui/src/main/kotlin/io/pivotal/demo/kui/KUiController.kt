@@ -12,8 +12,8 @@ import org.springframework.web.client.RestTemplate
 @RestController
 class KUiController(val restTemplate: RestTemplate, val fallbackGreeting: Greeting) {
 
-    @HystrixCommand(fallbackMethod = "getMessageFallback")
     @GetMapping("/message")
+    @HystrixCommand(fallbackMethod = "getMessageFallback")
     fun getMessage() = restTemplate.getForObject("http://cna-service/greeting", Greeting::class.java)
 
     fun getMessageFallback() = fallbackGreeting
