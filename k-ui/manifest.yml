@@ -9,5 +9,5 @@ applications:
     - scs-registry
     - scs-config
     - hystrix-dashboard
-  env:
-    ZIPKIN_SERVER_URI: http://zipkin-http-smd.cfapps.io
+#  env:
+#    ZIPKIN_SERVER_URI: http://zipkin-http-smd.cfapps.io
